@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports.Info</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+       /* Custom CSS styles */
+    .custom-container {
+      margin-top: 50px;
+    }
+    .custom-form {
+      background-color: #7b8fa3;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .custom-form h2 {
+      margin-bottom: 20px;
+    }
+    .custom-form .form-control {
+      border-radius: 5px;
+    }
+    .custom-form button {
+      margin-top: 20px;
+    }
+  </style>
+    
+</head>
+<body>
+  <nav class="navbar nav-bar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="col-4">
+        <a class="navbar-brand" href="#"><img src="logo.png" alt=""></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/menu-squared-2.png" alt="menu-squared-2"/></span>
+      </button>
+      <div class="col-8">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navul">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html" id="nava">HOME</a>
+            </li>
+
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                id="nava">
+                SPORTS
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark   dro" aria-labelledby="navbardropdown">
+                <li><a class="dropdown-item" href="games/football.html">Football</a></li>
+                <li><a class="dropdown-item" href="games/judo.html">Judo</a></li>
+                <li><a class="dropdown-item" href="games/tennis.html">Tennis</a></li>
+                <li><a class="dropdown-item" href="games/motorcycleracing.html">Motorcycle Racing</a></li>
+                <li><a class="dropdown-item" href="games/volleyball.html">Volley Ball</a></li>
+                <li><a class="dropdown-item" href="games/golf.html">Golf</a></li>
+                <li><a class="dropdown-item" href="games/chess.html">Chess</a></li>
+                <li><a class="dropdown-item" href="games/billiards.html">Billiards</a></li>
+                <li><a class="dropdown-item" href="games/badminton.html">Badminton</a></li>
+                <li><a class="dropdown-item" href="games/swimming.html">Swimming</a></li>
+                <li><a class="dropdown-item" href="games/athletics.html">Athletics</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html" id="nava">CONTACT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html" id="nava">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="review.html" id="nava">REVIEW</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- form -->
+  <div class="container">
+    <div class="row">
+      <div class="col-6 offset-md-3">
+        <form class="custom-form mt-5">
+          <h1 class="text-center">Contact Us</h1>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="phn">Phone No.</label>
+            <input type="text" class="form-control" id="phn" placeholder="+92">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+          </div>
+          <button type="submit" class="btn1 btn-primary btn-block">Submit</button>
+        </form>
+      </div>
+       
+     
+
+          <div class="col-6 offset-md-2">
+            <h2 class="text-center mt-3" style="text-align: center;"><b>Live Location</b></h2>
+            <div class="map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3485.9409760700514!2d78.87248947459233!3d29.10742386235876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390a5b8ba71bb575%3A0x133f04c06de9fa9f!2sIntejar%20bhai%20ka%20ghar!5e0!3m2!1sen!2s!4v1708257631464!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div id="map"></div>
+            </div>
+          </div>
+  
+   
+    </div>
+  </div>
+    
+  
+   
+    <!-- footer -->
+  <footer class="text-center bg-body-tertiary">
+    <!-- Grid container -->
+    <div class="container-fluid foo pt-4 g-0 mt-5">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+        <!-- Github -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+       <!-- Copyright -->
+       <div class="text-center foo p-3" id="copy">
+        © 2020 Copyright:  sports.info\.com
+      
+      </div>
+    <!-- Copyright -->
+  </footer>
+    </div>
+    <!-- Grid container -->
+
+   
+
+  <script>
+    import { Ripple, initMDB } from "mdb-ui-kit";
+
+    initMDB({ Ripple });
+  </script>
+
+
+</body>
+</html>

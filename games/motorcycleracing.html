@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports.Info</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <nav class="navbar nav-bar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="col-4">
+        <a class="navbar-brand" href="#"><img src="logo.png"  style="width:300px; height:100px;" alt=""></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><img width="30" height="30" src="https://img.icons8.com/ios/50/FFFFFF/menu-squared-2.png" alt="menu-squared-2"/></span>
+      </button>
+      <div class="col-8">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navul">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html" id="nava">HOME</a>
+            </li>
+
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                id="nava">
+                SPORTS
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark   dro" aria-labelledby="navbardropdown">
+                <li><a class="dropdown-item" href="games/football.html">Football</a></li>
+                <li><a class="dropdown-item" href="games/judo.html">Judo</a></li>
+                <li><a class="dropdown-item" href="games/tennis.html">Tennis</a></li>
+                <li><a class="dropdown-item" href="games/motorcycleracing.html">Motorcycle Racing</a></li>
+                <li><a class="dropdown-item" href="games/volleyball.html">Volley Ball</a></li>
+                <li><a class="dropdown-item" href="games/golf.html">Golf</a></li>
+                <li><a class="dropdown-item" href="games/chess.html">Chess</a></li>
+                <li><a class="dropdown-item" href="games/billiards.html">Billiards</a></li>
+                <li><a class="dropdown-item" href="games/badminton.html">Badminton</a></li>
+                <li><a class="dropdown-item" href="games/swimming.html">Swimming</a></li>
+                <li><a class="dropdown-item" href="games/athletics.html">Athletics</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html" id="nava">CONTACT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html" id="nava">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="review.html" id="nava">REVIEW</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+   <!-- footer -->
+   <footer class="text-center bg-body-tertiary">
+    <!-- Grid container -->
+    <div class="container-fluid foo pt-4 g-0 mt-5">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+        <!-- Github -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+       <!-- Copyright -->
+       <div class="text-center foo p-3" id="copy">
+        © 2020 Copyright:  sports.info\.com
+      
+      </div>
+    <!-- Copyright -->
+  </footer>
+    </div>
+    <!-- Grid container -->
+
+   
+
+  <script>
+    import { Ripple, initMDB } from "mdb-ui-kit";
+
+    initMDB({ Ripple });
+  </script>
+</body>
+</html>
