@@ -34,8 +34,8 @@
       border: 1px solid #ccc;
       padding: 20px;}
       .video-fluid {
-  width: 500px;
-  height: 400px;
+  width: 100%;
+  height: auto;
   
  
 }
@@ -43,10 +43,11 @@
     </style>
 </head>
 <body>
+  
   <nav class="navbar nav-bar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <div class="col-4">
-        <a class="navbar-brand" href="#"><img src="logo.png"  style="width:300px; height:100px;" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="logo.png" style="max-width: 100%; height: auto;" id="logo" alt=""></a>
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,24 +59,23 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html" id="nava">HOME</a>
             </li>
-
             <li class="nav-item dropdown ">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
                 id="nava">
                 SPORTS
               </a>
               <ul class="dropdown-menu dropdown-menu-dark   dro" aria-labelledby="navbardropdown">
-                <li><a class="dropdown-item" href="games/football.html">Football</a></li>
-                <li><a class="dropdown-item" href="games/judo.html">Judo</a></li>
-                <li><a class="dropdown-item" href="games/tennis.html">Tennis</a></li>
-                <li><a class="dropdown-item" href="games/motorcycleracing.html">Motorcycle Racing</a></li>
-                <li><a class="dropdown-item" href="games/volleyball.html">Volley Ball</a></li>
-                <li><a class="dropdown-item" href="games/golf.html">Golf</a></li>
-                <li><a class="dropdown-item" href="games/chess.html">Chess</a></li>
-                <li><a class="dropdown-item" href="games/billiards.html">Billiards</a></li>
-                <li><a class="dropdown-item" href="games/badminton.html">Badminton</a></li>
-                <li><a class="dropdown-item" href="games/swimming.html">Swimming</a></li>
-                <li><a class="dropdown-item" href="games/athletics.html">Athletics</a></li>
+                <li><a class="dropdown-item" href="football.html">Football</a></li>
+                <li><a class="dropdown-item" href="judo.html">Judo</a></li>
+                <li><a class="dropdown-item" href="tennis.html">Tennis</a></li>
+                <li><a class="dropdown-item" href="motorcycleracing.html">Motorcycle Racing</a></li>
+                <li><a class="dropdown-item" href="volleyball.html">Volley Ball</a></li>
+                <li><a class="dropdown-item" href="golf.html">Golf</a></li>
+                <li><a class="dropdown-item" href="chess.html">Chess</a></li>
+                <li><a class="dropdown-item" href="billiards.html">Billiards</a></li>
+                <li><a class="dropdown-item" href="badminton.html">Badminton</a></li>
+                <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
+                <li><a class="dropdown-item" href="athletics.html">Athletics</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -92,6 +92,9 @@
       </div>
     </div>
   </nav>
+  
+          
+  
 <!-- main -->
 
       <div>
@@ -161,43 +164,42 @@
               A: Doping refers to the use of banned substances or methods to enhance performance unfairly. It is strictly prohibited in athletics, and athletes are subject to testing for banned substances both in and out of competition. Violators face penalties including disqualification, suspension, and loss of medals or records. Anti-doping agencies such as the World Anti-Doping Agency (WADA) play a crucial role in testing and enforcing anti-doping regulations.</p>
           </div>
            <!-- footer -->
-  <footer class="text-center bg-body-tertiary">
-    <!-- Grid container -->
-    <div class="container-fluid foo pt-4 g-0 mt-5">
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-          data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
-
-        <!-- Twitter -->
-        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-          data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
-
-        <!-- Google -->
-        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-          data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
-
-        <!-- Instagram -->
-        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-          data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
-
-        <!-- Linkedin -->
-        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-          data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
-        <!-- Github -->
-        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-          data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
-      </section>
-      <!-- Section: Social media -->
-       <!-- Copyright -->
-       <div class="text-center foo p-3" id="copy">
-        © 2020 Copyright:  sports.info\.com
-      
-      </div>
-    <!-- Copyright -->
-  </footer>
-    </div>
+           <footer class="text-center bg-body-tertiary">
+            <!-- Grid container -->
+            <div class="container-fluid foo pt-4 g-0 mt-5">
+              <!-- Section: Social media -->
+              <section class="mb-4">
+                <!-- Facebook -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?q=fb&rlz=1C1GCEU_enPK864PK864&oq=fb&gs_lcrp=EgZjaHJvbWUyFAgAEEUYORhDGIMBGLEDGIAEGIoFMhIIARAuGEMYxwEY0QMYgAQYigUyEggCEAAYQxiDARixAxiABBiKBTIPCAMQLhhDGNQCGIAEGIoFMhMIBBAuGIMBGMcBGLEDGNEDGIAEMhIIBRAAGEMYgwEYsQMYgAQYigUyDAgGEC4YQxiABBiKBTIGCAcQRRg" target="_blank" role="button"
+                  data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+          
+                <!-- Twitter -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?gs_ssp=eJzj4tLP1TfIyDMsS05XYDRgdGDwYi8pzywpSS0CAFnOB00&q=twitter&rlz=1C" target="_blank" role="button"
+                  data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+          
+                <!-- Google -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwMU02T1JgNGB0YPBiS8_PT89JBQBASQXT&q=google&rlz=1C1GC"  target="_blank" role="button"
+                  data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+          
+                <!-- Instagram -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?q=instagram&rlz=1C1GCEU_enPK864PK864&oq=ins&gs_lcrp=EgZjaHJvbWUqFQgBEA"  target="_blank"role="button"
+                  data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+          
+                <!-- Linkedin -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://pk.linkedin.com/" target="_blank" role="button"
+                  data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+                <!-- Github -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?gs_ssp=eJzj4tLP1TcoqiwoyE1XYDRgdGDwYkvPLMkoTQIAWC4HFA&q=github&rlz=1C1"  target="_blank" role="button"
+                  data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+              </section>
+              <!-- Section: Social media -->
+               <!-- Copyright -->
+            <div class="text-center foo p-3" id="copy">
+              © 2020 Copyright:  sports.info\.com
+            
+            </div>
+          </div>
+          </footer>
     <!-- Grid container -->
 
    

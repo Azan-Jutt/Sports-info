@@ -8,12 +8,48 @@
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="bootstrap.bundle.min.js"></script>
+    <style>
+      h1{
+        color: rgb(201, 36, 64);
+        text-decoration:underline ;
+      }
+      h2{
+        color: rgb(116, 5, 23);
+      }
+      h2:hover{
+        color: gray;
+        text-decoration: underline;
+      }
+     b{
+      color: rgb(64, 64, 155);
+     }
+     u{
+      font-size: 20px;
+      color: rgb(30, 187, 96);
+     }
+     
+      .img-fluid{
+        width: 500px;
+      }
+      .custom-container {
+      border: 1px solid #ccc;
+      padding: 20px;}
+      .video-fluid {
+  width: 100%;
+  height: auto;
+  
+ 
+}
+
+    </style>
+ 
 </head>
 <body>
+  
   <nav class="navbar nav-bar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <div class="col-4">
-        <a class="navbar-brand" href="#"><img src="logo.png"  style="width:300px; height:100px;" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="logo.png" style="max-width: 100%; height: auto;" id="logo" alt=""></a>
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,24 +61,23 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html" id="nava">HOME</a>
             </li>
-
             <li class="nav-item dropdown ">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
                 id="nava">
                 SPORTS
               </a>
               <ul class="dropdown-menu dropdown-menu-dark   dro" aria-labelledby="navbardropdown">
-                <li><a class="dropdown-item" href="games/football.html">Football</a></li>
-                <li><a class="dropdown-item" href="games/judo.html">Judo</a></li>
-                <li><a class="dropdown-item" href="games/tennis.html">Tennis</a></li>
-                <li><a class="dropdown-item" href="games/motorcycleracing.html">Motorcycle Racing</a></li>
-                <li><a class="dropdown-item" href="games/volleyball.html">Volley Ball</a></li>
-                <li><a class="dropdown-item" href="games/golf.html">Golf</a></li>
-                <li><a class="dropdown-item" href="games/chess.html">Chess</a></li>
-                <li><a class="dropdown-item" href="games/billiards.html">Billiards</a></li>
-                <li><a class="dropdown-item" href="games/badminton.html">Badminton</a></li>
-                <li><a class="dropdown-item" href="games/swimming.html">Swimming</a></li>
-                <li><a class="dropdown-item" href="games/athletics.html">Athletics</a></li>
+                <li><a class="dropdown-item" href="football.html">Football</a></li>
+                <li><a class="dropdown-item" href="judo.html">Judo</a></li>
+                <li><a class="dropdown-item" href="tennis.html">Tennis</a></li>
+                <li><a class="dropdown-item" href="motorcycleracing.html">Motorcycle Racing</a></li>
+                <li><a class="dropdown-item" href="volleyball.html">Volley Ball</a></li>
+                <li><a class="dropdown-item" href="golf.html">Golf</a></li>
+                <li><a class="dropdown-item" href="chess.html">Chess</a></li>
+                <li><a class="dropdown-item" href="billiards.html">Billiards</a></li>
+                <li><a class="dropdown-item" href="badminton.html">Badminton</a></li>
+                <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
+                <li><a class="dropdown-item" href="athletics.html">Athletics</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -59,52 +94,127 @@
       </div>
     </div>
   </nav>
-   <!-- footer -->
-   <footer class="text-center bg-body-tertiary">
-    <!-- Grid container -->
-    <div class="container-fluid foo pt-4 g-0 mt-5">
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-          data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+  
+  <div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+         <div class="text-center"> <h1>VOLLEYBALL</h1></div>
+         <div>
+          <p> <h2>Volleyball:</h2>a dynamic fusion of athleticism and teamwork, embodies the spirit of spirited competition and unyielding camaraderie. With its roots dating back to a humble invention in 1895, the sport has since soared to international acclaim, captivating audiences with its fast-paced action and electrifying rallies. Played on a stage of sand or court, it demands precision, agility, and strategic prowess from its players, each spike, dig, and block serving as a testament to the dedication and skill of those who embrace its challenge. As the ball soars through the air, suspended in a moment of anticipation, the essence of volleyball shines brightest – a celebration of unity, perseverance, and the relentless pursuit of victory." </p>
+        </div>
+          <b> a. How many players play the game?</b>
+          <p>
+            <i>Indoor Volleyball:</i> A standard indoor volleyball team consists of six players on the court at any given time.
+           <i> Beach Volleyball:</i> In beach volleyball, each team has two players.
+          </p>
+              <b>b. Strategy of the game?</b>
+              <p> <i>Offensive Strategies: </i>Teams use various offensive strategies such as setting, spiking, and blocking to score points. <br>
+              <i>Defensive Strategies:</i> Defensive tactics include digging, blocking, and positioning to prevent the opposing team from scoring.</p>
+    
+       
+       
 
-        <!-- Twitter -->
-        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-          data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
 
-        <!-- Google -->
-        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-          data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+  <img src="img/pexels-pavel-danilyuk-6203521.jpg" class="img-fluid" alt="Responsive image">
+</div>
+<div class="col-md-6">
+  <div class="text-container">
+    <b>c. Is it a team game?</b>
+        
+        <p>Yes, volleyball is a team sport where players work together to score points and win matches.</p>
+         
+        <b>d. Rules of the game.</b>
+        
+        <p>1. Scoring: Rally scoring is used, meaning a point is scored on every serve, regardless of which team served. <br>
+        2. Rotations: Players rotate positions on the court clockwise when their team wins the serve from the opposing team. <br>
+      3.Touches: Each team is allowed a maximum of three touches to return the ball over the net. <br>
+    4.Net Violations: Players are not allowed to touch the net during play.</p>
+    
+  </div>
+</div>
+</div>
+</div>
+        
 
-        <!-- Instagram -->
-        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-          data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+        <b>e. Some important facts about the game</b>
+        
+       <p> Invention: Volleyball was invented in 1895 by William G. Morgan in Holyoke, Massachusetts, USA. <br>
+        Tournaments: The FIVB (Fédération Internationale de Volleyball) World Championships and the Olympic Games are among the most prestigious volleyball tournaments. <br>
+        Special Events: The FIVB Volleyball World Cup and the FIVB Volleyball World Grand Champions Cup are also significant international competitions.</p>
 
-        <!-- Linkedin -->
-        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-          data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
-        <!-- Github -->
-        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-          data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
-      </section>
-      <!-- Section: Social media -->
-       <!-- Copyright -->
-       <div class="text-center foo p-3" id="copy">
-        © 2020 Copyright:  sports.info\.com
-      
-      </div>
-    <!-- Copyright -->
-  </footer>
-    </div>
-    <!-- Grid container -->
+        <b>f. Statistics/records</b>
+        
+        <p>Most Olympic Gold Medals: The United States men's volleyball team has won the most Olympic gold medals in indoor volleyball, with 4 golds. <br>
+          Longest Volleyball Rally: The longest recorded volleyball rally lasted over 85 minutes during a match between TSV Grafing and DJK Eibach in Germany in 2016. <br>
+          Highest Spike: The highest recorded volleyball spike was achieved by Bulent Korkmaz from Turkey, reaching a height of 3.65 meters (12 feet) above the net.</p>
 
-   
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<video class="video-fluid" autoplay loop muted>
+<source src="img/pexels-pavel-danilyuk-6216952 (1080p).mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>     
+<div class="container">
+  <p><h2>History</h2><b>Origin</b>Volleyball was invented in 1895 by William G. Morgan, a physical education director in Massachusetts, USA. Originally called "mintonette," it was designed as a less physically demanding alternative to basketball for older adults. <br><b>Development: </b>The game evolved rapidly, with rules formalized and refined over time. In 1947, the Fédération Internationale de Volleyball (FIVB) was founded, governing the sport internationally. <br><b>Olympic Inclusion:</b>Volleyball made its Olympic debut in 1964 (men) and 1964 (women) at the Tokyo Games. Since then, it has been a staple of the Olympic program.
+    <h2>Records</h2><b>Longest Volleyball Game: </b> The longest recorded volleyball game lasted 75 hours and 30 minutes, organized by The Guiness World Records in July 2012. <br><b>Fastest Serve:</b>The fastest recorded serve in volleyball history was by Ivan Zaytsev of Italy, clocking at 133.3 km/h (82.8 mph) in 2017.
+    <h2>Iconic Players</h2><b>Karch Kiraly: </b>Widely regarded as one of the greatest volleyball players of all time. He won gold medals in both indoor (1984, 1988) and beach volleyball (1996). <br><b>Lang Ping:</b>A Chinese volleyball player and coach, known as the "Iron Hammer." She won gold as a player in the 1984 Olympics and coached the Chinese women's team to gold in 2016. <br><b>Giba:</b>A Brazilian volleyball player, known for his incredible athleticism and versatility. He won gold at the 2004 and 2008 Olympics.
+    <h2>FAQs</h2>
+<u>How many players are on a volleyball team?</u> <br>A standard volleyball team consists of six players on the court at any given time, divided into three front-row players and three back-row players.<br>
+<u>What is a libero?</u> <br>A libero is a specialized defensive player who wears a different color jersey from the rest of the team. They are allowed to replace any back-row player without prior notice and cannot serve, block, or attempt to block.<br>
+<u>What are the dimensions of a volleyball court?</u> <br>A standard volleyball court is 18 meters long and 9 meters wide, with a net dividing it into two equal halves.<br>
+<u>How is a volleyball match scored?</u> <br>Volleyball matches are typically played in a best-of-five sets format. Each set is played to 25 points (with the exception of the fifth set, which is played to 15 points), and a team must win by at least two points.<br>
+<u>What are the common fouls in volleyball?</u> <br>Common fouls in volleyball include illegal touches (double hits, lifts, carries), foot faults during serving, net violations, and crossing the center line.
+  </p>
+</div>
+ 
+<footer class="text-center bg-body-tertiary">
+  <!-- Grid container -->
+  <div class="container-fluid foo pt-4 g-0 mt-5">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?q=fb&rlz=1C1GCEU_enPK864PK864&oq=fb&gs_lcrp=EgZjaHJvbWUyFAgAEEUYORhDGIMBGLEDGIAEGIoFMhIIARAuGEMYxwEY0QMYgAQYigUyEggCEAAYQxiDARixAxiABBiKBTIPCAMQLhhDGNQCGIAEGIoFMhMIBBAuGIMBGMcBGLEDGNEDGIAEMhIIBRAAGEMYgwEYsQMYgAQYigUyDAgGEC4YQxiABBiKBTIGCAcQRRg" target="_blank" role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
 
-  <script>
-    import { Ripple, initMDB } from "mdb-ui-kit";
+      <!-- Twitter -->
+      <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?gs_ssp=eJzj4tLP1TfIyDMsS05XYDRgdGDwYi8pzywpSS0CAFnOB00&q=twitter&rlz=1C" target="_blank" role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
 
-    initMDB({ Ripple });
-  </script>
+      <!-- Google -->
+      <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwMU02T1JgNGB0YPBiS8_PT89JBQBASQXT&q=google&rlz=1C1GC"  target="_blank" role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+      <!-- Instagram -->
+      <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?q=instagram&rlz=1C1GCEU_enPK864PK864&oq=ins&gs_lcrp=EgZjaHJvbWUqFQgBEA"  target="_blank"role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+      <!-- Linkedin -->
+      <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://pk.linkedin.com/" target="_blank" role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+      <!-- Github -->
+      <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?gs_ssp=eJzj4tLP1TcoqiwoyE1XYDRgdGDwYkvPLMkoTQIAWC4HFA&q=github&rlz=1C1"  target="_blank" role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+    </section>
+    <!-- Section: Social media -->
+     <!-- Copyright -->
+  <div class="text-center foo p-3" id="copy">
+    © 2020 Copyright:  sports.info\.com
+  
+  </div>
+</div>
+</footer>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+                  <script>
+                    import { Ripple, initMDB } from "mdb-ui-kit";
+                    initMDB({ Ripple });
+                  </script>
 </body>
 </html>

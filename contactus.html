@@ -12,7 +12,7 @@
     
     <style>
        /* Custom CSS styles */
-    .custom-container {
+    /* .custom-container {
       margin-top: 50px;
     }
     .custom-form {
@@ -28,6 +28,9 @@
     }
     .custom-form button {
       margin-top: 20px;
+    } */
+    label{
+ color: yellow;
     }
   </style>
     
@@ -85,84 +88,139 @@
 
 
   <!-- form -->
+  <div class="container bg-dark mt-5">
+    <div class="row">
+      <h1 class="text-warning text-center">Contact Form</h1>
+      <form action="">
+        <div>
+          <label for="nm">Name</label>
+          <input type="text" class="form-control" id="nm">
+          <label for="" id="nameerror"></label>
+  
+      </div>
+      <div>
+        <label for="em">Email</label>
+        <input type="text" class="form-control" id="em">
+        <label for="" id="emailerror"></label>
+  
+    </div>
+    <div>
+      <label for="mess">Message</label>
+      <textarea name="" id="mess" cols="30" rows="10" class="form-control"></textarea>
+      <label for="" id="textareaerror"></label>
+  </div>
+  <div class="d-grid gap-2 col-6 mx-auto mb-5">
+    <input onclick=" validate()" type="button" value="Submit" class="btn-warning btn btn-lg">
+  </div>
+      </form>
+    </div>
+   </div>
+         <script>
+          function validate(){
+          var name = document.getElementById("nm").value;
+          var email = document.getElementById("em").value;
+          var textarea = document.getElementById("mess").value;
+  
+          var namePattern = /^[A-Za-z ]{3,12}$/;
+          var emailPattern = /^[a-zA-Z_.]{3,}[0,9]{0,9}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,6}$/;
+  if(namePattern.test(name)){
+    document.getElementById("nameerror").innerHTML = "";
+  }else{
+    document.getElementById("nameerror").innerHTML = "Name is invalid";
+    document.getElementById("nameerror").style.color= "red";
+  
+  }
+  if(emailPattern.test(email)){
+    document.getElementById("emailerror").innerHTML = "";
+  }else{
+    document.getElementById("emailerror").innerHTML = "Email is invalid";
+    document.getElementById("emailerror").style.color= "red";
+  
+  }
+  if(textarea != 0){
+    document.getElementById("textareaerror").innerHTML = "";
+  
+  }else if(textarea==0){
+    document.getElementById("textareaerror").innerHTML = "Write Your Message";
+    document.getElementById("textareaerror").style.color= "red";
+  
+  }if(namePattern.test(name) != 0 && emailPattern.test(email) && textarea !=0){
+  document.getElementById("nm").value="";
+  document.getElementById("em").value="";
+  document.getElementById("mess").value="";
+          }
+        }  
+        // function validate() {
+        //       var userInput = alert("Thank You for Submitting");
+              
+        //   }
+  
+    
+        
+  
+  
+         </script> 
+  
+         
+       
   <div class="container">
     <div class="row">
-      <div class="col-md-6 offset-md-3">
-        <form class="custom-form mt-5">
-          <h1 class="text-center">Contact Us</h1>
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name">
-          </div>
-          <div class="form-group">
-            <label for="phn">Phone No.</label>
-            <input type="text" class="form-control" id="phn" placeholder="+92">
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email">
-          </div>
-          <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
-          </div>
-          <button type="submit" class="btn1 btn-primary btn-block">Submit</button>
-        </form>
+      <div class="col " style="width: 100%;">
+        <h2 class="text-center mt-3" style="text-align: center;"><b>Live Location</b></h2>
+        <div class="map-container">
+          <iframe  style="width: 100%; "src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d28945.64212896037!2d67.01593943078211!3d24.92507630703884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sAPTECH!5e0!3m2!1sen!2s!4v1709101969925!5m2!1sen!2s" width="" height="450" style="border:0;" allowfullscreen="" loading="fast" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+          <div id="map"></div>
+        </div>
       </div>
-       
-     
-
-          <div class="col-md-6 offset-md-3">
-            <h2 class="text-center mt-3" style="text-align: center;"><b>Live Location</b></h2>
-            <div class="map-container">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3485.9409760700514!2d78.87248947459233!3d29.10742386235876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390a5b8ba71bb575%3A0x133f04c06de9fa9f!2sIntejar%20bhai%20ka%20ghar!5e0!3m2!1sen!2s!4v1708257631464!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              <div id="map"></div>
-            </div>
-          </div>
   
-   
     </div>
   </div>
+
+
+
+
+ 
     
   
    
     <!-- footer -->
-  <footer class="text-center bg-body-tertiary">
-    <!-- Grid container -->
-    <div class="container-fluid foo pt-4 g-0 mt-5">
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-          data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
-
-        <!-- Twitter -->
-        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-          data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
-
-        <!-- Google -->
-        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-          data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
-
-        <!-- Instagram -->
-        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-          data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
-
-        <!-- Linkedin -->
-        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-          data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
-        <!-- Github -->
-        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-          data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
-      </section>
-      <!-- Section: Social media -->
-       <!-- Copyright -->
-       <div class="text-center foo p-3" id="copy">
-        © 2020 sports.info\.com
+    <footer class="text-center bg-body-tertiary">
+      <!-- Grid container -->
+      <div class="container-fluid foo pt-4 g-0 mt-5">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?q=fb&rlz=1C1GCEU_enPK864PK864&oq=fb&gs_lcrp=EgZjaHJvbWUyFAgAEEUYORhDGIMBGLEDGIAEGIoFMhIIARAuGEMYxwEY0QMYgAQYigUyEggCEAAYQxiDARixAxiABBiKBTIPCAMQLhhDGNQCGIAEGIoFMhMIBBAuGIMBGMcBGLEDGNEDGIAEMhIIBRAAGEMYgwEYsQMYgAQYigUyDAgGEC4YQxiABBiKBTIGCAcQRRg" target="_blank" role="button"
+            data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+    
+          <!-- Twitter -->
+          <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?gs_ssp=eJzj4tLP1TfIyDMsS05XYDRgdGDwYi8pzywpSS0CAFnOB00&q=twitter&rlz=1C" target="_blank" role="button"
+            data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+    
+          <!-- Google -->
+          <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwMU02T1JgNGB0YPBiS8_PT89JBQBASQXT&q=google&rlz=1C1GC"  target="_blank" role="button"
+            data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+    
+          <!-- Instagram -->
+          <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?q=instagram&rlz=1C1GCEU_enPK864PK864&oq=ins&gs_lcrp=EgZjaHJvbWUqFQgBEA"  target="_blank"role="button"
+            data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+    
+          <!-- Linkedin -->
+          <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://pk.linkedin.com/" target="_blank" role="button"
+            data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+          <!-- Github -->
+          <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?gs_ssp=eJzj4tLP1TcoqiwoyE1XYDRgdGDwYkvPLMkoTQIAWC4HFA&q=github&rlz=1C1"  target="_blank" role="button"
+            data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
+         <!-- Copyright -->
+      <div class="text-center foo p-3" id="copy">
+        © 2020 Copyright:  sports.info\.com
+      
       </div>
-    <!-- Copyright -->
-  </footer>
     </div>
+    </footer>
     <!-- Grid container -->
 
    

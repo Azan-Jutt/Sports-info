@@ -20,7 +20,47 @@
             
 .card {
         margin-bottom: 20px;
-      }
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.4s ease-in-out;
+        display: flex;
+        align-items: stretch;
+        height: 100%;
+
+} 
+.col-md-3{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.btn-info {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: all 0.4s ease-in-out;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card-img-top{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 </style>
 
 </head>
@@ -203,7 +243,7 @@
           </div>
         </div>
       </div>
-      
+
       <!-- //button// -->
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -230,22 +270,18 @@
 <p>
   
 
-Paris Saint-Germain defeated Real Sociedad 2-0, putting themselves in a strong position to advance.
-S.S. Lazio stunned Bayern Munich with a 1-0 victory, throwing the tie wide open.
-Manchester City edged past Copenhagen with a 3-1 win, taking control of the tie.
-Real Madrid narrowly beat RB Leipzig 1-0 thanks to a late goal, giving them a slender advantage.
+  As of today, February 28, 2024, the 2023/2024 UEFA Champions League is still ongoing, with the Round of 16 stage just completed. Here's a quick summary:
+
+  <h3>Completed matches: </h3>The first leg of the Round of 16 has concluded. You can find the results of the completed matches, including scores and venues, in my previous response.
+ <h3> Upcoming matches: </h3>The second leg of the Round of 16 is scheduled for March 5th and 6th, 2024. You can find the upcoming fixtures, including teams and venues, by searching online for "UCL 2024 fixtures".
+  It's difficult to determine definitively which team is currently "the best" as there are various factors to consider beyond just wins and losses. However, some teams have consistently performed well throughout the competition, including:
+  <br>
+ 
 </P>
-<h2>Pakistan Cricket League (PCL):</h2>
-<p>
-Are you looking for updates on the upcoming PSL 9 draft and player movements?
-Are you interested in news about the released anthem or ticket sales?
-Or are you looking for general information about the league format or past seasons.
-Geopolitical landscape: Ongoing conflicts, global tensions, and diplomatic efforts continue to shape international relations.
+
 
 
 </p>
-<h3>Climate change:</h3>
- <p>Extreme weather events and environmental concerns remain high on the agenda. </p>
 
 </div>
       <div class="col-6" id="color">
@@ -309,7 +345,7 @@ Geopolitical landscape: Ongoing conflicts, global tensions, and diplomatic effor
 
               <div class="col-md-3">
                 <div class="card">
-                  <img src="img/hussainshah.jpg" class="card-img-top" alt="..." height="250">
+                  <img src="img/hussainshah.jpg" class="card-img-top"  alt="..." height="250">
                   <div class="card-body">
                     <h5 class="card-title"> Syed Hussain Shah</h5>
                     <p class="card-text">Hussain shah made history by becoming the first Pakistani boxer  to Win an Olympic medal. he Won Many prizes</p>
@@ -321,7 +357,11 @@ Geopolitical landscape: Ongoing conflicts, global tensions, and diplomatic effor
                       <div class="modal-dialog modal-dialog-scrollable">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1><b> Syed Hussain Shah(Boxer)</b></h1>
+                            <div class="row">
+                              <h1><b> Syed Hussain Shah(Boxer)</b></h1>
+
+                            </div>
+                           
                           </div>
                           <div class="modal-body">
                             <p>
@@ -458,6 +498,7 @@ Geopolitical landscape: Ongoing conflicts, global tensions, and diplomatic effor
                   </div>
                 </div>
               </div>
+
               <div class="col-md-3">
                 <div class="card">
                   <img src="img/hasansardar.jpg" class="card-img-top" alt="..."height="250">
@@ -505,9 +546,10 @@ Geopolitical landscape: Ongoing conflicts, global tensions, and diplomatic effor
                   </div>
                 </div>
               </div>
+
               <div class="col-md-3">
                 <div class="card">
-                  <img src="img/hussainshah.jpg" class="card-img-top" alt="..." height="250">
+                  <img src="img/shahhussainshah.jpg" class="card-img-top" alt="..." height="250">
                   <div class="card-body">
                     <h5 class="card-title">Shah Hussain Shah</h5>
                     <p class="card-text">Shah Hussain shah is a Pakistani judako who has represented Pakistan in multiple judo Championships.He won numerous medals.</p>
@@ -548,7 +590,8 @@ Geopolitical landscape: Ongoing conflicts, global tensions, and diplomatic effor
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
+
+              <div class="col-md-3 max-height">
                 <div class="card">
                   <img src="img/waseemakram.jpg" class="card-img-top" alt="..." height="250">
                   <div class="card-body">
@@ -598,28 +641,42 @@ Geopolitical landscape: Ongoing conflicts, global tensions, and diplomatic effor
       </div>
       
 
-                        <footer class="text-center bg-body-tertiary w-100 container-fluid">
-                          <div class="container-fluid foo pt-4 g-0 mt-5">
-                            <section class="mb-4">
-                              <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-                                data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
-                              <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-                                data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
-                              <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-                                data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
-                              <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-                                data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
-                              <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-                                data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
-                              <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
-                                data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
-                            </section>
-                            <div class="text-center foo p-3" id="copy">
-                              © 2020 sports.info\.com
-                            </div>
-                          </div>
-                        </footer>
-
+      <footer class="text-center bg-body-tertiary">
+        <!-- Grid container -->
+        <div class="container-fluid foo pt-4 g-0 mt-5">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?q=fb&rlz=1C1GCEU_enPK864PK864&oq=fb&gs_lcrp=EgZjaHJvbWUyFAgAEEUYORhDGIMBGLEDGIAEGIoFMhIIARAuGEMYxwEY0QMYgAQYigUyEggCEAAYQxiDARixAxiABBiKBTIPCAMQLhhDGNQCGIAEGIoFMhMIBBAuGIMBGMcBGLEDGNEDGIAEMhIIBRAAGEMYgwEYsQMYgAQYigUyDAgGEC4YQxiABBiKBTIGCAcQRRg" target="_blank" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+      
+            <!-- Twitter -->
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?gs_ssp=eJzj4tLP1TfIyDMsS05XYDRgdGDwYi8pzywpSS0CAFnOB00&q=twitter&rlz=1C" target="_blank" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+      
+            <!-- Google -->
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwMU02T1JgNGB0YPBiS8_PT89JBQBASQXT&q=google&rlz=1C1GC"  target="_blank" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+      
+            <!-- Instagram -->
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?q=instagram&rlz=1C1GCEU_enPK864PK864&oq=ins&gs_lcrp=EgZjaHJvbWUqFQgBEA"  target="_blank"role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+      
+            <!-- Linkedin -->
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://pk.linkedin.com/" target="_blank" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+            <!-- Github -->
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?gs_ssp=eJzj4tLP1TcoqiwoyE1XYDRgdGDwYkvPLMkoTQIAWC4HFA&q=github&rlz=1C1"  target="_blank" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+          </section>
+          <!-- Section: Social media -->
+           <!-- Copyright -->
+        <div class="text-center foo p-3" id="copy">
+          © 2020 Copyright:  sports.info\.com
+        
+        </div>
+      </div>
+      </footer>
                         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
                         <script>
                           import { Ripple, initMDB } from "mdb-ui-kit";

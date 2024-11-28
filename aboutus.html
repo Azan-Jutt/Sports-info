@@ -7,7 +7,7 @@
     <title>Sports.Info</title>
     <link rel="stylesheet" href="bootstrap.min.css" />
     <script src="bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -20,7 +20,10 @@
         color: #30292f;
         margin-top: 50px;
       }
-
+#logo{
+  max-width: 100%;
+  height: auto;
+}
       .container {
         margin-bottom: 50px;
         display: flex;
@@ -52,108 +55,39 @@
     <nav class="navbar nav-bar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <div class="col-4">
-          <a class="navbar-brand" href="#"
-            ><img src="logo.png" style="width: 300px; height: 100px" alt=""
-          /></a>
+          <a class="navbar-brand" href="#"><img src="logo.png" style="max-width: 100%; height: auto;" id="logo" alt=""></a>
         </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span
-            ><img
-              width="30"
-              height="30"
-              src="https://img.icons8.com/ios/50/FFFFFF/menu-squared-2.png"
-              alt="menu-squared-2"
-          /></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span><img width="30" height="30" src="https://img.icons8.com/ios/50/FFFFFF/menu-squared-2.png" alt="menu-squared-2"/></span>
         </button>
         <div class="col-8">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navul">
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="index.html"
-                  id="nava"
-                  >HOME</a
-                >
+                <a class="nav-link active" aria-current="page" href="index.html" id="nava">HOME</a>
               </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  id="nava"
-                >
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                  id="nava">
                   SPORTS
                 </a>
-                <ul
-                  class="dropdown-menu dropdown-menu-dark dro"
-                  aria-labelledby="navbardropdown"
-                >
-                  <li>
-                    <a class="dropdown-item" href="games/football.html"
-                      >Football</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="games/judo.html">Judo</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="games/tennis.html">Tennis</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="games/motorcycleracing.html"
-                      >Motorcycle Racing</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="games/volleyball.html"
-                      >Volley Ball</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="games/golf.html">Golf</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="games/chess.html">Chess</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="games/billiards.html"
-                      >Billiards</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="games/badminton.html"
-                      >Badminton</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="games/swimming.html"
-                      >Swimming</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="games/athletics.html"
-                      >Athletics</a
-                    >
-                  </li>
+                <ul class="dropdown-menu dropdown-menu-dark   dro" aria-labelledby="navbardropdown">
+                  <li><a class="dropdown-item" href="games/football.html">Football</a></li>
+                  <li><a class="dropdown-item" href="games/judo.html">Judo</a></li>
+                  <li><a class="dropdown-item" href="games/tennis.html">Tennis</a></li>
+                  <li><a class="dropdown-item" href="games/motorcycleracing.html">Motorcycle Racing</a></li>
+                  <li><a class="dropdown-item" href="games/volleyball.html">Volley Ball</a></li>
+                  <li><a class="dropdown-item" href="games/golf.html">Golf</a></li>
+                  <li><a class="dropdown-item" href="games/chess.html">Chess</a></li>
+                  <li><a class="dropdown-item" href="games/billiards.html">Billiards</a></li>
+                  <li><a class="dropdown-item" href="games/badminton.html">Badminton</a></li>
+                  <li><a class="dropdown-item" href="games/swimming.html">Swimming</a></li>
+                  <li><a class="dropdown-item" href="games/athletics.html">Athletics</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contactus.html" id="nava"
-                  >CONTACT US</a
-                >
+                <a class="nav-link" href="contactus.html" id="nava">CONTACT US</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="aboutus.html" id="nava">ABOUT US</a>
@@ -188,20 +122,25 @@
           <div class="col-md-6 mt-5">
             <h3>AROOBA KHAN</h3>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
-              quaerat consequatur ut numquam aut culpa quia voluptatum fugiat
-              blanditiis eaque. Mollitia similique voluptatem exercitationem.
-              Aut blanditiis
+              We are embarking on a journey to become proficient web designers, fueled by our passion for this craft and an unwavering commitment to excellence. Our hearts are brimming with enthusiasm as we delve into the intricacies of web design, eager to hone our skills and make our mark in this dynamic field. With determination as our guiding force, we are confident that our journey will lead us to greater heights, where we will continue to produce exceptional work and push the boundaries of what is possible.
             </p>
           </div>
         </div>
       </div>
 
       <!-- aman -->
+      
       <div class="container mt-5 mb-5">
         <div class="row">
+           <!-- Column for the paragraph -->
+       <div class="col-md-6 mt-5">
+        <h3>MOHAMMAD AMAN</h3>
+        <p>
+          We are on a path towards becoming skilled web designers, driven by a genuine interest in this fascinating domain and a firm resolve to excel. The prospect of delving into the world of web design fills us with excitement and anticipation for the challenges and opportunities that lie ahead. With each step forward, we are committed to learning and growing, confident that our dedication will pave the way for future success. As we embark on this journey, we are determined to leave a lasting impact through our creativity and innovation.
+        </p>
+      </div>
           <!-- Column for the picture -->
-          <div class="col-md-6 d-sm-block d-lg-none d-md-none">
+          <div class="col-md-6">
             <img
               src="img/IMG-20240214-WA0015.jpg"
               class="img-fluid"
@@ -209,37 +148,7 @@
               id="abtimg"
             />
           </div>
-          <div class="col-md-6 mt-5">
-            <h3>MOHAMMAD AMAN</h3>
-            <p>
-              I thrive on staying at the forefront of web development trends,
-              constantly honing my skills to deliver cutting-edge solutions. My
-              journey in software engineering has been marked by a dedication to
-              creating user-friendly interfaces that marry form and function.
-              Through my proficiency in HTML and CSS, I transform ideas into
-              interactive and dynamic web applications. In addition to my
-              technical prowess, I am a collaborative team player, valuing
-              effective communication and teamwork to achieve project goals.
-              With a knack for problem-solving, I navigate challenges with
-              creativity and precision. My commitment to continuous learning and
-              adaptability makes me well-equipped to handle the ever-evolving
-              landscape of web development. Whether it's designing visually
-              stunning layouts, optimizing website performance, or ensuring
-              cross-browser compatibility, I approach every project with
-              enthusiasm and a commitment to excellence. My code is not just
-              lines on a screen; it's a reflection of my expertise and passion
-              for creating digital solutions that leave a lasting impression.
-            </p>
-          </div>
-          <!-- Column for the paragraph -->
-          <div class="col-md-6 d-none d-md-block d-lg-block">
-            <img
-              src="img/IMG-20240214-WA0015.jpg"
-              class="img-fluid"
-              alt="Your Image"
-              id="abtimg"
-            />
-          </div>
+         
         </div>
       </div>
 
@@ -248,7 +157,7 @@
       <div class="container mt-5 mb-5">
         <div class="row">
           <!-- Column for the picture -->
-          <div class="col-md-6 d-none d-sm-block">
+          <div class="col-md-6">
             <img
               src="img/IMG-20240214-WA0014.jpg"
               class="img-fluid"
@@ -260,60 +169,25 @@
           <div class="col-md-6 mt-5">
             <h3>AZAN JUTT</h3>
             <p>
-              Hello, I'm Azan, a seasoned software engineer specializing in
-              responsive web development, with a strong command of HTML and CSS.
-              With a passion for turning ideas into functional and visually
-              captivating digital experiences, coding is not just a skill for
-              me; it's my chosen profession. My journey in software engineering
-              has equipped me with expertise in creating websites that
-              seamlessly adapt to various screen sizes, ensuring a user-friendly
-              and immersive experience. I pride myself on the precision and
-              attention to detail that I bring to every line of code, resulting
-              in websites that are both aesthetically pleasing and
-              high-performing. Staying at the forefront of technological
-              advancements, I constantly refine my skills to incorporate the
-              latest trends in web development. As a collaborative team player,
-              I thrive in environments that value effective communication and
-              collective success. Problem-solving is ingrained in my approach,
-              and my adaptability allows me to navigate the ever-evolving
-              landscape of web development with ease.
+              We are in the process of cultivating our skills as web designers, drawn to this field by its inherent intrigue and potential for creativity. Our passion for web design fuels our ambition to master the art and craft meaningful digital experiences. With each new concept explored and every design challenge embraced, we are fueled by the desire to refine our abilities and achieve excellence. Looking ahead, we are excited about the possibilities that await us and remain committed to making a positive impact through our work.
             </p>
-          </div>
-          <div class="col-md-6 d-none">
-            <img
-              src="img/IMG-20240214-WA0014.jpg"
-              class="img-fluid"
-              alt="Your Image"
-              id="abtimg"
-            />
           </div>
         </div>
       </div>
-    </div>
+   
 
     <!-- ijlal -->
     <div class="container mt-5 mb-5">
       <div class="row">
-        <!-- Column for the picture -->
-        <div class="col-md-6 d-none d-sm-block d-lg-none d-md-none">
-          <img
-            src="img/IMG-20240214-WA0016.jpg"
-            class="img-fluid"
-            alt="Your Image"
-            id="abtimg"
-          />
-        </div>
+        <!-- Column for the paragraph -->
         <div class="col-md-6 mt-5">
           <h3>SYED IJLAL HAIDER</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
-            quaerat consequatur ut numquam aut culpa quia voluptatum fugiat
-            blanditiis eaque. Mollitia similique voluptatem exercitationem. Aut
-            blanditiis
+            We are aspiring web designers, driven by a deep-seated fascination for the intricacies of this discipline and a steadfast determination to excel. The prospect of delving into the world of web design ignites a sense of purpose within us, spurring us on to pursue our passion with unwavering dedication. As we embark on this journey, we are eager to immerse ourselves in the creative process, pushing the boundaries of our abilities and striving for perfection in every project. With optimism and enthusiasm, we look forward to the challenges and rewards that lie ahead, confident in our ability to make a meaningful contribution to the world of web design.
           </p>
         </div>
-        <!-- Column for the paragraph -->
-        <div class="col-md-6 d-none d-md-block d-lg-block">
+        <!-- Column for the picture -->
+        <div class="col-md-6">
           <img
             src="img/IMG-20240214-WA0016.jpg"
             class="img-fluid"
@@ -321,7 +195,9 @@
             id="abtimg"
           />
         </div>
+        
       </div>
+    </div>
     </div>
 
     <!-- footer -->

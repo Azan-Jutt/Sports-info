@@ -34,8 +34,8 @@
       border: 1px solid #ccc;
       padding: 20px;}
       .video-fluid {
-  width: 500px;
-  height: 400px;
+  width: 100%;
+  height: auto;
   
  
 }
@@ -47,7 +47,7 @@
   <nav class="navbar nav-bar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <div class="col-4">
-        <a class="navbar-brand" href="#"><img src="logo.png"  style="width:300px; height:100px;" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="logo.png" style="max-width: 100%; height: auto;" id="logo" alt=""></a>
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,24 +59,23 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html" id="nava">HOME</a>
             </li>
-
             <li class="nav-item dropdown ">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
                 id="nava">
                 SPORTS
               </a>
               <ul class="dropdown-menu dropdown-menu-dark   dro" aria-labelledby="navbardropdown">
-                <li><a class="dropdown-item" href="games/football.html">Football</a></li>
-                <li><a class="dropdown-item" href="games/judo.html">Judo</a></li>
-                <li><a class="dropdown-item" href="games/tennis.html">Tennis</a></li>
-                <li><a class="dropdown-item" href="games/motorcycleracing.html">Motorcycle Racing</a></li>
-                <li><a class="dropdown-item" href="games/volleyball.html">Volley Ball</a></li>
-                <li><a class="dropdown-item" href="games/golf.html">Golf</a></li>
-                <li><a class="dropdown-item" href="games/chess.html">Chess</a></li>
-                <li><a class="dropdown-item" href="games/billiards.html">Billiards</a></li>
-                <li><a class="dropdown-item" href="games/badminton.html">Badminton</a></li>
-                <li><a class="dropdown-item" href="games/swimming.html">Swimming</a></li>
-                <li><a class="dropdown-item" href="games/athletics.html">Athletics</a></li>
+                <li><a class="dropdown-item" href="football.html">Football</a></li>
+                <li><a class="dropdown-item" href="judo.html">Judo</a></li>
+                <li><a class="dropdown-item" href="tennis.html">Tennis</a></li>
+                <li><a class="dropdown-item" href="motorcycleracing.html">Motorcycle Racing</a></li>
+                <li><a class="dropdown-item" href="volleyball.html">Volley Ball</a></li>
+                <li><a class="dropdown-item" href="golf.html">Golf</a></li>
+                <li><a class="dropdown-item" href="chess.html">Chess</a></li>
+                <li><a class="dropdown-item" href="billiards.html">Billiards</a></li>
+                <li><a class="dropdown-item" href="badminton.html">Badminton</a></li>
+                <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
+                <li><a class="dropdown-item" href="athletics.html">Athletics</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -93,6 +92,7 @@
       </div>
     </div>
   </nav>
+  
        <!-- main -->
        
     <div>
@@ -188,7 +188,7 @@
     As one of the most-watched leagues globally, the English Premier League boasts intense competition, iconic clubs, and nail-biting finishes. It has become a powerhouse in the footballing world.
     <br>
     <b>La Liga</b>
-    Known for its technical prowess and flair, La Liga in Spain showcases the artistry of football. With clubs like Barcelona and Real Madrid, it has produced some of the greatest footballing moments.
+    Known for its technical prowess and flair, La Liga in Spain showcases the artistry of football. With clubs  like Barcelona and <br> Real Madrid, it has produced some of the greatest footballing moments.
     <br>
     <b>Serie A</b>
     Italian football, embodied by Serie A, combines tactical mastery with defensive resilience. The league's history is intertwined with legendary figures and unforgettable matches.
@@ -291,26 +291,26 @@
     <!-- Section: Social media -->
     <section class="mb-4">
       <!-- Facebook -->
-      <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+      <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?q=fb&rlz=1C1GCEU_enPK864PK864&oq=fb&gs_lcrp=EgZjaHJvbWUyFAgAEEUYORhDGIMBGLEDGIAEGIoFMhIIARAuGEMYxwEY0QMYgAQYigUyEggCEAAYQxiDARixAxiABBiKBTIPCAMQLhhDGNQCGIAEGIoFMhMIBBAuGIMBGMcBGLEDGNEDGIAEMhIIBRAAGEMYgwEYsQMYgAQYigUyDAgGEC4YQxiABBiKBTIGCAcQRRg" target="_blank" role="button"
         data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
 
       <!-- Twitter -->
-      <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+      <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?gs_ssp=eJzj4tLP1TfIyDMsS05XYDRgdGDwYi8pzywpSS0CAFnOB00&q=twitter&rlz=1C" target="_blank" role="button"
         data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
 
       <!-- Google -->
-      <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+      <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwMU02T1JgNGB0YPBiS8_PT89JBQBASQXT&q=google&rlz=1C1GC"  target="_blank" role="button"
         data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
 
       <!-- Instagram -->
-      <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+      <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?q=instagram&rlz=1C1GCEU_enPK864PK864&oq=ins&gs_lcrp=EgZjaHJvbWUqFQgBEA"  target="_blank"role="button"
         data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
 
       <!-- Linkedin -->
-      <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+      <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://pk.linkedin.com/" target="_blank" role="button"
         data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
       <!-- Github -->
-      <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+      <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.google.com/search?gs_ssp=eJzj4tLP1TcoqiwoyE1XYDRgdGDwYkvPLMkoTQIAWC4HFA&q=github&rlz=1C1"  target="_blank" role="button"
         data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
     </section>
     <!-- Section: Social media -->
@@ -319,11 +319,8 @@
     © 2020 Copyright:  sports.info\.com
   
   </div>
-  <!-- Copyright -->
+</div>
 </footer>
-  </div>
-  <!-- Grid container -->
-
  
 
 <script>
